@@ -1,0 +1,186 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# input text
+# input select
+# attached file
+--------------------------------------------------------------*/
+
+/* input text */
+input.input-text{
+    font-size: 28px;
+    border: none;
+    outline: none;
+    transition: all 0.4s;
+    box-sizing: border-box;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+
+    &::placeholder{
+        color: #BABABA;
+        transition: all 0.4s;
+    }
+
+    &:not(:focus):not(placeholder){
+        color: #C9AD80
+    }
+
+    &:focus{
+        border-color: #D0021B;
+        width: 260px!important;
+        cursor: text;
+
+        &::placeholder{
+            color: transparent;
+        }
+
+    }
+
+}
+
+/* input select */
+.styled-select{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    box-sizing: border-box;
+    transition: all 0.4s;
+    cursor: pointer;
+    transition: all 0.4s;
+
+    select{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .styled-select__val{
+        color: #BABABA;
+
+        &.selected{
+            color: #C9AD80;
+        }
+    }
+
+    .styled-select__options{
+        position: absolute;
+        top: calc(100% + 1px);
+        left: 0;
+        max-height: 210px;
+        min-width: 200px;
+        background: #fff;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+        transform: translateY(15px);
+        opacity: 0;
+        transition: all 0.4s;
+        pointer-events: none;
+        z-index: 10;
+        overflow: auto;
+    }
+
+    .styled-select__options__val{
+        display: flex;
+        align-items: center;
+        font-family: 'Open Sans', sans-serif;
+        height: 30px;
+        font-size: 14px;
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    .styled-select__options__val.selected{
+        background: #ededed;
+        font-weight: 600;
+    }
+
+    .styled-select__options__val:hover{
+        background: #ededed;
+    }
+
+    &.active{
+        border-color: #D0021B;
+
+        .styled-select__options{
+            transform: translateY(0px);
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+}
+
+/*attached file*/
+.attached-files{
+    margin-top: 54px;
+    display: flex;
+    justify-content: center;
+
+    .file-item{
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .file-item .file-name{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        color: #bababa;
+        font-weight: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        margin-left: 10px;
+    }
+}
+
+.fp-scroller{
+    min-height: 100%
+}
+
+//TEST
+@media (max-width: 768px) {
+    .header {
+        height: 75px;
+        padding: 0 30px 10px!important;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        #logo {
+            position: relative;
+            left: auto;
+            top: auto;
+            padding: 0 0 7px 10px;
+
+            .logo-icon {
+                width: 120px;
+                height: 14px;
+            }
+        }
+    }
+}
+#attach-ico{
+    display: inline-flex; justify-content: center; align-items: center;
+    margin-top: 54px;
+    font-size: 14px;
+    cursor: pointer;
+    .icon{
+        display: block;
+        width: 44px; height: 44px;
+        background-image: url('../icons/attached_file.svg'); background-repeat: no-repeat; 
+        background-size: contain; background-position: center;
+    }
+    .icon-text{
+        color: #BABABA;
+        margin-left: 10px;
+    }
+}
+section.section_4{
+    background: #f5f5f5;
+}
+
+#attach-label{
+    transition: all 0.2s;
+}

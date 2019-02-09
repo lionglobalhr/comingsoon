@@ -1,0 +1,21 @@
+<svg id="Menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(0,0,0,0);
+      }
+
+      .cls-2 {
+        fill: #231f20;
+      }
+    </style>
+  </defs>
+  <rect id="Menu_background" data-name="Menu background" class="cls-1" width="37" height="41"/>
+  <g id="Menu-2" data-name="Menu" transform="translate(5.695 12.189)">
+    <g id="Burger_Menu" data-name="Burger Menu" transform="translate(0 0)">
+      <path id="Fill_2" data-name="Fill 2" class="cls-2" d="M25.067,0H.534A.565.565,0,0,0,0,.591a.565.565,0,0,0,.534.592H25.067A.565.565,0,0,0,25.6.591.565.565,0,0,0,25.067,0"/>
+      <path id="Fill_3" data-name="Fill 3" class="cls-2" d="M25.067,0H.534A.565.565,0,0,0,0,.591a.564.564,0,0,0,.534.591H25.067A.564.564,0,0,0,25.6.591.565.565,0,0,0,25.067,0" transform="translate(0 8.274)"/>
+      <path id="Fill_4" data-name="Fill 4" class="cls-2" d="M25.067,0H.534A.565.565,0,0,0,0,.591a.564.564,0,0,0,.534.591H25.067A.564.564,0,0,0,25.6.591.565.565,0,0,0,25.067,0" transform="translate(0 16.548)"/>
+    </g>
+  </g>
+</svg>

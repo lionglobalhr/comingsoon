@@ -1,0 +1,447 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography
+# Indents
+# Main
+# Imports
+--------------------------------------------------------------*/
+
+
+
+
+/* ##### TYPOGRAPHY ##### */
+
+/* Titles */
+.title,
+.our-email,
+.thanks-title{
+    font-size: 42px; font-weight: bold; font-family: 'Poppins', sans-serif;
+}
+.title-39{
+    font-size: 39px; font-weight: bold; font-family: 'Poppins', sans-serif;
+}
+.red-title{
+    font-size: 21px; font-weight: bold; font-family: 'Open Sans', sans-serif;
+    color: #D0021B; letter-spacing: 5px;
+    padding-top: 160px;
+
+    &.small-padding{
+        padding-top: 110px;
+    }
+
+    &.no-padding{
+        padding-top: 0;
+    }
+    &.big{
+        font-size: 24px;
+    }
+}
+.mini-title{
+    font-size: 18px; font-family: 'Poppins', sans-serif;
+}
+
+/* Secondary text */
+.secondary-text{
+    font-size: 14px; font-family: 'Poppins', sans-serif;
+}
+
+/* Helpers */
+.font-letter-spacing{
+    font-weight: 500;
+    letter-spacing: normal;
+}
+.opacity-none{
+    opacity: 0;
+}
+.centered-content{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Text color */
+.text-tan{
+    color: #C9AD80;
+}
+.text-baba{
+    color: #BABABA;
+}
+
+.text-4a{
+    color: #4A4A4A;
+}
+/* ##### INDENTS ###### */
+
+/* Paddings */
+.prl-0{
+    padding-left: 0;
+    padding-right: 0;
+}
+.pt-30{
+    padding-top: 30px;
+}
+.pt-34{
+    padding-top: 34px;
+}
+.pt-40{
+    padding-top: 40px;
+}
+.pt-54{
+    padding-top: 54px;
+}
+.pt-60{
+    padding-top: 60px;
+}
+.pt-68{
+    padding-top: 68px;
+}
+.pt-104{
+    padding-top: 104px;
+}
+.pt-184{
+    padding-top: 184px;
+}
+.pb-90{
+    padding-bottom: 90px;
+}
+
+.pb-110{
+    padding-bottom: 110px;
+}
+
+/* ##### MAIN ###### */
+
+body{
+    position: relative;
+    margin: 0;
+}
+
+section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    //padding-top: 160px;
+    background: #fff;
+
+    &.centered{
+        padding: 0;
+    }
+
+    &.small-padding{
+        //padding-top: 110px;
+    }
+}
+
+.page{
+    height: 100vh; width: 100vw; max-width: 100%;
+    position: relative;
+}
+.header{
+    padding: 0 70px 0 50px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+/* Top img */
+.top-img{
+    background-image: url('../img/top-img.png'); background-repeat: no-repeat;
+    background-position: center; background-size: cover;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+
+/* BG */
+.bg-black{
+    background-color: #000;
+}
+.bg-blackens{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+}
+.bg-darkens{
+    background-color: #343230;
+}
+.bg-red{
+    background-color: #DB1E3D;
+}
+
+/*Logo*/
+// #logo{
+//     position: absolute;
+//     top: 50px;
+//     left: 50px;
+// }
+
+/* Flex */
+.flex-justify-align{
+    display: flex; justify-content: center; align-items: center;
+}
+.d-grid{
+    display: grid;
+}
+
+
+/* BTNS */
+a.btn{
+    width: 270px; height: 60px;
+    display: flex; justify-content: center; align-items: center;
+    color: #fff; text-transform: uppercase; text-decoration: none;
+    font-size: 12px; font-weight: bold; font-family: 'Open Sans', sans-serif;
+    outline: none;
+    position: absolute; left: calc(50% - 135px); bottom: 0;
+    border-radius: 0;
+    transition: all 0.4s;
+
+    &:hover{
+        color: #fff;
+        background: #B41F33;
+    }
+}
+a.go-top{
+    bottom: 60px;
+    &:hover{
+        background: #343230;
+    }
+}
+a.menu,
+a.cross{
+    display: block;
+    text-decoration: none;
+    outline: none;
+}
+
+/*inputs*/
+.main-form{
+    font-size: 28px; font-family: 'Poppins', sans-serif;
+}
+input[type=text]{
+    width: auto;
+    border: none; outline: none;
+    font-size: 28px;
+}
+input#attach{
+    display: none;
+}
+#attach-label{
+    color: #000; font-weight: bold;
+    cursor: pointer;
+}
+#attach-label:hover{
+    color: #DB1E3D;
+}
+
+
+
+
+/* ##### IMPORTS ###### */
+@import 'section_5';
+@import 'section_3';
+@import 'nav_bar';
+@import 'popup';
+
+/* adaptive */
+@media (max-width: 1400px) {
+    .title{
+        font-size: 38px;
+    }
+    .red-title{
+        padding-top: 85px;
+    }
+    .title-39{
+        font-size: 34px;
+    }
+}
+@media (max-width: 1200px) {
+    .title{
+        font-size: 34px;
+    }
+    .mini-title{
+        font-size: 16px;
+    }
+    .red-title{
+        font-size: 18px;
+        padding-top: 100px;
+    }
+    .title-39{
+        font-size: 32px;
+    }
+}
+@media (max-width: 992px) {
+    a.scroller{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        height: 75px;
+        padding: 0 30px 10px!important;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        #logo {
+            position: relative;
+            left: auto;
+            top: auto;
+            padding: 0 0 7px 10px;
+
+            .logo-icon {
+                width: 120px;
+                height: 14px;
+            }
+        }
+    }
+
+    body.fp-responsive {
+        section,
+        .fp-tableCell {
+            position: relative;
+            height: unset !important;
+            min-height: auto;
+            a.go-top{
+                margin-top: 100px;
+            }
+        }
+
+        section.section_1 {
+            .centered-content {
+                min-height: calc(100vh - 60px);
+            }
+
+            a.btn{
+                margin: 0 auto;
+            }
+        }
+
+        a.btn{
+            position: relative;
+            bottom: auto;
+            left: auto;
+            margin: 0 auto 0;
+        }
+    }
+
+    .copyright{
+        // position: relative;
+    }
+
+    a.nav-link{
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .title{
+        font-size: 32px;
+    }
+    .mini-title{
+        font-size: 18px;
+    }
+    .red-title{
+        font-size: 14px;
+    }
+    .pt-68{
+        padding-top: 10px;
+    }
+    .pt-60{
+        padding-top: 30px;
+    }
+    .secondary-text{
+        font-size: 14px;
+    }
+    .title-39{
+        font-size: 24px;
+    }
+    .f-14{
+        font-size: 14px;
+    }
+    .section_5 .phone{
+        font-size: 30px;
+    }
+    .header{
+        padding: 25px 30px 0 40px;
+    }
+    #nav-bar{
+        width: 80vw;
+        padding: 25px 30px 0 40px;
+    }
+    .main-form{
+        padding-top: 66px;
+    }
+    .main-form,
+    input.input-text,
+    .styled-select__val{
+        font-size: 24px;
+    }
+    .copyright{
+        position: relative;
+        display: flex; justify-content: center;
+        .child{
+            text-align: center;
+        }
+    }
+    a.nav-link{
+        line-height: 1.4;
+    }
+    a .mail-line-bold{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 375px) {
+    .container{
+        padding-left: 50px; padding-right: 50px;
+    }
+    .our-email{
+        font-size: 21px;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .thanks-title{
+        font-size: 28px;
+    }
+    .nav-logo{
+        font-size: 14px;
+    }
+    a.nav-link{
+        margin-top: 0;
+        ine-height: 1.3;
+    }
+    .nav-secondary{
+        font-size: 12px;
+    }
+    .pt-54{
+        padding-top: 24px;
+    }
+    a.our-email{
+        font-size: 24px;
+    }
+    .main-form,
+    input.input-text,
+    .styled-select__val{
+        font-size: 21px;
+    }
+    .no-pad{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .copyright{
+        height: 70px;
+    }
+}
+@media (max-width: 340px) {
+    a.nav-link {
+        line-height: 1.2;
+    }
+}
+
+.fp-tableCell{
+    display: block;
+}
+.section_4{
+    background-color: #f5f5f5;
+}

@@ -1,0 +1,97 @@
+/*nav bar*/
+#nav-bar{
+    width: 50vw; height: 100vh;
+    background-color: #000;
+    position: fixed;
+    right: 0; top: 0;
+    padding: 50px 70px 76px 85px;
+    z-index: 9999;
+    transform: translate(100%);
+}
+.nav-logo{
+    font-size: 16px; font-weight: bold; font-family: 'Open Sans', sans-serif;
+    color: #C9AD80;
+}
+a.cross{
+    display: block;
+    text-decoration: none;
+    outline: none;
+}
+a.cross #test{
+    width: 36px;
+    height: 40px;
+}
+
+a.nav-link{
+    display: inline-block;
+    text-decoration: none; outline: none;
+    color: #fff;
+    font-size: 28px; line-height: 1.5; font-weight: bold; font-family: 'Open Sans', sans-serif;
+    margin-top: 10px; padding: 0;
+}
+a.nav-link:hover{
+    color: #C9AD80;
+}
+a.nav-link span{
+    color: #BABABA;
+    font-size: 12px; font-style: normal;
+}
+.nav-secondary{
+    font-size: 14px; font-family: 'Open Sans', sans-serif;
+    color: #BABABA;
+    max-width: 420px;
+}
+.nav-secondary span{
+    font-weight: bold;
+}
+#nav-bar ul{
+    list-style: none;
+    margin: 0; padding: 0;
+}
+
+/*nav bar*/
+.plate{
+    padding-top: 44px;
+}
+.circle{
+    width: 48px; height: 48px;
+    background-image: url('../img/circle.png'); background-size: contain;
+    background-repeat: no-repeat; background-position: center;
+    margin-right: 25px;
+}
+.plate-text{
+    // height: 170px;
+    padding-right: 30px;
+    // overflow: hidden;
+    line-height: 2;
+}
+
+/*01.02.2019*/
+.menu-cross-icon-svg{
+    fill: #fff;
+    width: 37px;
+    height: 41px;
+    transition: all 0.4s;
+}
+
+#close-nav:hover .menu-cross-icon-svg{
+    fill: #C9AD80;
+}
+
+/*update 04.02*/
+#navbar-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 999;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s;
+
+    &.open{
+        opacity: 1;
+    }
+}
